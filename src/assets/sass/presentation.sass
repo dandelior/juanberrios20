@@ -1,0 +1,54 @@
+@import 'variables'
+
+.hero
+    display: flex
+    flex-wrap: wrap
+    // width: 100%
+    box-sizing: border-box
+    padding-top: 196px
+    // padding-top: 112px
+    .presentationTitle
+        order: 1
+        h5
+            font-weight: 300
+            font-size: 15px
+            letter-spacing: -0.01em
+            color: rgba($black, 0.8)
+            margin:
+                bottom: 25px
+        h1
+            font-size: 36px
+            letter-spacing: -0.02em
+            line-height: 130%
+            font-weight: 400
+            margin-bottom: 60px
+    .indexDescription
+        order: 3
+        width: 95%
+        margin-bottom: 92px
+        p
+            line-height: 150%
+            font-size: 15px
+            letter-spacing: -0.01em
+            color: rgba($black, 0.8)
+            margin-bottom: 26px
+            &:last-child
+                margin-bottom: 0
+        a
+            color: $black
+            font-weight: 600
+    .imagePresentation
+        order: 2
+        width: 100%
+        margin-bottom: 57px
+        .img
+            width: 100%
+            height: 420px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            margin-bottom: 14px
+        figcaption
+            font-size: 13px
+            color: rgba($black, 0.5)
+            letter-spacing: -0.01em
