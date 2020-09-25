@@ -31,6 +31,7 @@
                 letter-spacing: -0.02em
                 color: $black
                 margin-bottom: 32px
+                max-width: 420px
             .description
                 margin:
                     // bottom: 48px
@@ -39,6 +40,7 @@
                     font-size: 16px
                     line-height: 160%
                     letter-spacing: -0.01em
+                    max-width: 420px
                     margin:
                         bottom: 18px
                     color: rgba($black, 0.8)
@@ -68,3 +70,26 @@
             &:last-child
                 margin:
                     bottom: 0
+
+@media (min-width: 660px)
+    .work
+        .workImage
+        .workHeader
+            .headerDescription
+                h5
+                h2
+                    max-width: 480px
+                .description
+                    p
+                        max-width: 480px
+            .headerDetails
+                max-width: 480px
+                display: flex
+                flex-wrap: wrap
+                .item
+                    width: 50%
+                    h6
+                    p
+        .content
+            img
+                &:last-child

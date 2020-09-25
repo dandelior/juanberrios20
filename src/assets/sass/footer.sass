@@ -9,8 +9,10 @@ footer
         font-weight: 600
         font-size: 38px
         line-height: 130%
+        line-height: 125%
         margin-bottom: 48px
         letter-spacing: -0.02em
+        max-width: 390px
     .contactOptions
         display: flex
         flex-wrap: wrap
@@ -35,4 +37,21 @@ footer
             font-size: 14px
             line-height: 150%
             color: rgba($black, 0.5)
-            // margin-bottom: 2px
+                // margin-bottom: 2px
+        
+@media (min-width: 660px)
+    footer
+        h1
+            font-size: 42px
+            max-width: 480px
+        .contactOptions
+            display: flex
+            width: 480px
+            div
+                width: 50%
+                p
+                a
+        .credits
+            display: flex
+            justify-content: space-between
+            p

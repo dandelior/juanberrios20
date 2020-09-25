@@ -7,8 +7,10 @@ export class Profile extends React.Component {
             <div className="profile">
 
                 <div className="profileHeader pd-lr">
-                    <div className="profileImage"></div>
-                    <div className="profileImage"></div>
+                    <div className="profileImages">
+                        <div className="profileImage"></div>
+                        <div className="profileImage"></div>
+                    </div>
                     <div className="profileDesc">
                         <h5>Perfil — Bios</h5>
                         <h1>
