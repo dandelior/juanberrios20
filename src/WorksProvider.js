@@ -3,30 +3,30 @@ export const worksProvider = [
         title: 'SAGA Service',
         imgLink: '#',
         categories: 'Branding / Web',
-        link: '#'
+        link: '/work'
     },
     {
         title: 'NFIT',
         imgLink: '#',
         categories: 'App / WebApp',
-        link: '#'
+        link: '/work'
     },
     {
         title: 'Kilómetro Cero App',
         imgLink: '#',
         categories: 'App / WebApp',
-        link: '#'
+        link: '/work'
     },
     {
         title: 'Viveros El Maitén',
         imgLink: '#',
         categories: 'Branding / Web',
-        link: '#'
+        link: '/work'
     },
     {
         title: 'Iglesia Presbiteriana San Pablo',
         imgLink: '#',
         categories: 'Branding / Web',
-        link: '#'
+        link: '/work'
     }
 ];
