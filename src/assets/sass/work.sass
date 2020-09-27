@@ -74,6 +74,8 @@
 @media (min-width: 660px)
     .work
         .workImage
+            margin:
+                bottom: 100px
         .workHeader
             .headerDescription
                 h5
@@ -88,6 +90,55 @@
                 flex-wrap: wrap
                 .item
                     width: 50%
+                    h6
+                    p
+        .content
+            img
+                &:last-child
+
+@media (min-width: 900px)
+    .work
+        padding:
+            top: 126px
+        .workImage
+            // margin:
+            //     bottom: 100px
+        .workHeader
+            display: flex
+            justify-content: space-between
+            .headerDescription
+                width: 65%
+                h5
+                h2
+                    max-width: 520px
+                .description
+                    p
+                        max-width: 520px
+            .headerDetails
+                width: 30%
+                // max-width: 480px
+                // display: flex
+                // flex-wrap: wrap
+                .item
+                    width: 100%
+                    // width: 50%
+                    h6
+                    p
+        .content
+            img
+                &:last-child
+
+@media (min-width: 1100px)
+    .work
+        .workImage
+        .workHeader
+            .headerDescription
+                h5
+                h2
+                .description
+                    p
+            .headerDetails
+                .item
                     h6
                     p
         .content

@@ -117,6 +117,9 @@ header
         
 @media (min-width: 660px)
     header
+        padding:
+            top: 53px
+            // bottom: 53px
         .branding
             a
         .hamburger
@@ -134,6 +137,93 @@ header
                 right: 32px
             ul
                 a
+                    &:hover
+                    &:nth-child(1)
+                    &:nth-child(2)
+                    &:nth-child(3)
+                    &:nth-child(4)
+                    &:last-child
+        &.active
+            .branding
+                a
+            .hamburger
+                .hamburger-box-a,
+                .hamburger-box-b
+            .navigation
+                ul
+                    a
+        
+@media (min-width: 900px)
+    header
+        padding: 
+            top: 58px
+            // bottom: 53px
+        .branding
+            width: 100%
+            a
+        .hamburger
+            display: none
+            .hamburger-box-a,
+            .hamburger-box-b
+            .hamburger-box-a
+            .hamburger-box-b
+            &:hover
+            &.active
+                .hamburger-box-a
+                .hamburger-box-b
+        .navigation
+            position: relative
+            background-color: transparent
+            right: auto
+            width: auto
+            height: auto
+            padding:
+                left: 0
+                right: 0
+                top: 0
+            width: 100%
+            ul
+                display: flex
+                justify-content: flex-end
+                width: 100%
+                a
+                    display: inherit
+                    font-size: 15px
+                    margin-left: 52px
+                    margin-bottom: 0
+                    &:hover
+                    &:nth-child(1)
+                    &:nth-child(2)
+                    &:nth-child(3)
+                    &:nth-child(4)
+                    &:last-child
+        &.active
+            .branding
+                a
+            .hamburger
+                .hamburger-box-a,
+                .hamburger-box-b
+            .navigation
+                ul
+                    a
+        
+@media (min-width: 1100px)
+    header
+        .branding
+            a
+        .hamburger
+            .hamburger-box-a,
+            .hamburger-box-b
+            .hamburger-box-a
+            .hamburger-box-b
+            &:hover
+            &.active
+                .hamburger-box-a
+                .hamburger-box-b
+        .navigation
+            ul
+                a
+                    margin-left: 76px
                     &:hover
                     &:nth-child(1)
                     &:nth-child(2)

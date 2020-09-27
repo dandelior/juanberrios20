@@ -6,7 +6,18 @@
     // width: 100%
     box-sizing: border-box
     padding-top: 196px
+    position: relative
     // padding-top: 112px
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 800px
+        background-color: $lightGray
+        z-index: -10
     .presentationTitle
         order: 1
         h5
@@ -60,6 +71,7 @@
 
 @media (min-width: 660px)
     .hero
+        padding-top: 216px
         .presentationTitle
             h5
             h1
@@ -70,5 +82,78 @@
             a
         .imagePresentation
             .img
+            figcaption
+                a
+
+@media (min-width: 900px)
+    .hero
+        padding-top: 170px
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        grid-template-rows: repeat(1, 1fr)
+        grid-column-gap: 24px
+        margin:
+            bottom: 110px
+        &::after
+            height: 490px
+        .presentationTitle
+            grid-area: 1 / 1 / 2 / 4
+            order: 1
+            padding: 
+                top: 68px
+            margin:
+                bottom: 0
+            h5
+            h1
+                margin-bottom: 92px
+        .indexDescription
+            grid-area: 2 / 1 / 3 / 4
+            // align-items: start
+            order: 2
+            margin-bottom: 0
+            p
+                max-width: 84%
+            a
+        .imagePresentation
+            grid-area: 1 / 4 / 3 / 6
+            order: 3
+            margin-bottom: 0
+            .img
+                // height: 92%
+                // height: 70%
+                height: 95%
+                // height: auto
+                // height: 500px
+            figcaption
+                a
+
+@media (min-width: 1100px)
+    .hero
+        padding-top: 173px
+        &::after
+            height: 536px
+        .presentationTitle
+            h5
+                font-size: 16px
+                margin:
+                    bottom: 33px
+            h1
+                font-size: 54px
+                line-height: 120%
+                max-width: 90%
+                margin-bottom: 104px
+        .indexDescription
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            max-width: 90%
+            p
+                width: 46.5%
+            a
+        .imagePresentation
+            box-sizing: border-box
+            padding-left: 50px
+            .img
+                height: 92%
             figcaption
                 a
