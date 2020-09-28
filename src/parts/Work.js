@@ -35,7 +35,7 @@ export class Work extends React.Component {
                                 <p>Desarrollo Web</p>
                             </div>
                             <div className="item">
-                                <h6>Lenguajes / Fframeworks</h6>
+                                <h6>Lenguajes / Frameworks</h6>
                                 <p>Laravel</p>
                             </div>
                         </div>

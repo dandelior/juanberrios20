@@ -12,7 +12,7 @@ export class Profile extends React.Component {
                         <div className="profileImage"></div>
                     </div>
                     <div className="profileDesc">
-                        <h5>Perfil — Bios</h5>
+                        <h5>Perfil — Bio</h5>
                         <h1>
                             Soy un <span className="font-bold">Diseñador</span> y <span className="font-bold">Desarrollador Frontend</span> chileno.
                         </h1>
@@ -32,7 +32,7 @@ export class Profile extends React.Component {
 
                 <div className="profileItems pd-lr">
                     <h2>
-                        Algunas formas en que te puedo ayudar.
+                        Algunas formas en que puedo ayudarte.
                     </h2>
                     <div className="items">
                         <div className="item">

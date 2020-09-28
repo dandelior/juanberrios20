@@ -26,19 +26,23 @@ export class Header extends React.Component {
         const menus = [
             {
                 title: 'Trabajos',
-                link: '/'
+                link: '/',
+                isExternal: false
             },
             {
                 title: 'Instagram',
-                link: 'https://instagram.com/bydandelior'
+                link: 'https://instagram.com/bydandelior',
+                isExternal: true
             },
             {
                 title: 'GitHub',
-                link: 'https://github.com/dandelior'
+                link: 'https://github.com/dandelior',
+                isExternal: true
             },
             {
                 title: 'Perfil',
-                link: '/profile'
+                link: '/profile',
+                isExternal: false
             }
         ]
 
@@ -58,7 +62,7 @@ export class Header extends React.Component {
                     <nav className={`navigation ${actualState ? "active" : ""}`}>
                         <ul>
                             {menus.map((menu) => (
-                                <a href={menu.link}>{menu.title}</a>
+                                <a href={menu.link} target={menu.isExternal ? '_blank' : '_self'}>{menu.title}</a>
                             ))}
                         </ul>
                     </nav>

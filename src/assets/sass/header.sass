@@ -189,13 +189,19 @@ header
                 a
                     display: inherit
                     font-size: 15px
-                    margin-left: 52px
+                    margin-left: 66px
                     margin-bottom: 0
+                    transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1)
                     &:hover
+                        opacity: 0.6
                     &:nth-child(1)
+                        transition-delay: 0s
                     &:nth-child(2)
+                        transition-delay: 0s
                     &:nth-child(3)
+                        transition-delay: 0s
                     &:nth-child(4)
+                        transition-delay: 0s
                     &:last-child
         &.active
             .branding
@@ -211,6 +217,7 @@ header
     header
         .branding
             a
+                font-size: 16px
         .hamburger
             .hamburger-box-a,
             .hamburger-box-b
@@ -223,7 +230,7 @@ header
         .navigation
             ul
                 a
-                    margin-left: 76px
+                    margin-left: 82px
                     &:hover
                     &:nth-child(1)
                     &:nth-child(2)
