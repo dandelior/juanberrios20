@@ -8,6 +8,7 @@
     .item
         width: 100%
         margin-top: 50px
+        // transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1)
         a.img
             display: block
             width: 100%
@@ -19,6 +20,8 @@
             background-repeat: no-repeat
             background-size: cover
             margin-bottom: 24px
+            opacity: 1
+            transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1)
         .data
             a
                 h4
@@ -26,12 +29,22 @@
                     color: $black
                     font-size: 15px
                     font-weight: 700
+                    opacity: 1
+                    transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1)
             p
                 font-size: 15px
                 font-weight: 300
                 letter-spacing: -0.01em
         &:first-child
             margin-top: 0
+        &:hover,
+        &:active
+            a.img
+                opacity: 0.5
+            .data
+                a
+                    h4
+                p
 
 @media (min-width: 660px)
     .portfolioGrid
