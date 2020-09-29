@@ -3,42 +3,52 @@ import React from 'react';
 import { Header } from './parts/Header';
 import { Footer } from './parts/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/scrollToTop';
 // Index
-import { PresentationIndex } from './parts/PresentationIndex';
-import { PortfolioGrid } from './parts/PortfolioGrid';
+import Main from './pages/Main';
 // Work
-import { Work } from './parts/Work';
+import WorkPage from './pages/Work';
 // Profile
-import { Profile } from './parts/Profile';
+import ProfilePage from './pages/Profile';
 
 class App extends React.Component {
+  // constructor() {
+  //   super()
+  // }
+
   render() {
+
     return (
-      <div>
-        <Header />
-
         <Router>
-          <Switch>
-            <Route exact path="/">
-              <PresentationIndex />
-              <PortfolioGrid />
-            </Route>
-            <Route path="/profile">
-              {/* Perfil */}
-              <Profile />
-            </Route>
-            <Route path="/work">
-              {/* Work */}
-              <Work />
-            </Route>
-            <Route>
-              {/* 404 */}
-            </Route>
-          </Switch>
-        </Router>
+          <>
+            <Header />
 
-        <Footer />
-      </div>
+              <Switch>
+                {/* Index */}
+                <Route exact path="/">
+                  <ScrollToTop />
+                  <Main />
+                </Route>
+                {/* Profile */}
+                <Route path="/profile">
+                  <ScrollToTop />
+                  <ProfilePage />
+                </Route>
+                {/* A Work */}
+                <Route path="/work">
+                  <ScrollToTop />
+                  <WorkPage />
+                </Route>
+                {/* 404 */}
+                <Route>
+                  <ScrollToTop />
+                  <Main />
+                </Route>
+              </Switch>
+
+            <Footer />
+          </>
+        </Router>
     );
   }
 }

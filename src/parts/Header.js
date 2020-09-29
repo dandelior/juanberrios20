@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/sass/header.sass';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 export class Header extends React.Component {
     constructor(props){
@@ -48,6 +49,7 @@ export class Header extends React.Component {
 
         return (
             <>
+            {/* <Router> */}
                 <header className={`pd-lr ${actualState ? "active" : ""}`}>
                     {/* Branding */}
                     <div className="branding">
@@ -61,12 +63,15 @@ export class Header extends React.Component {
                     {/* Navigation Menu */}
                     <nav className={`navigation ${actualState ? "active" : ""}`}>
                         <ul>
-                            {menus.map((menu) => (
-                                <a href={menu.link} target={menu.isExternal ? '_blank' : '_self'}>{menu.title}</a>
+                            {menus.map((menu) => (                                
+                                menu.isExternal 
+                                ? <a href={menu.link} target="_blank">{menu.title}</a>
+                                : <Link to={menu.link}>{menu.title}</Link>
                             ))}
                         </ul>
                     </nav>
                 </header>
+            {/* </Router> */}
             </>
         )
     }

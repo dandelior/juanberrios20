@@ -3,6 +3,12 @@
 
 @import 'variables'
     
+@keyframes down
+    0%
+        margin-top: -100px
+    100%
+        margin-top: 0
+
 header
     display: flex
     justify-content: space-between
@@ -13,6 +19,8 @@ header
         // top: 53px
         top: 43px
         bottom: 53px
+    margin-top: 0
+    // animation: down 1s forwards
     .branding
         position: relative
         z-index: 14
