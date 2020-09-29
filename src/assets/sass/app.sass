@@ -64,11 +64,20 @@ html, body
         padding-left: 60px
         padding-right: 60px
 
-.changePage-enter
-    opacity: 0
-.changePage-enter-active
-    opacity: 1
-.changePage-exit
-    opacity: 1
-.changePage-exit-active
-    opacity: 1
+// .changePage-enter
+//     opacity: 0
+// .changePage-enter-active
+//     opacity: 1
+// .changePage-exit
+//     opacity: 1
+// .changePage-exit-active
+//     opacity: 1
+
+@keyframes fadeIn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.fadeIn
+    animation: fadeIn 0.7s forwards

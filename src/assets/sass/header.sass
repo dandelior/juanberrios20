@@ -20,6 +20,7 @@ header
         top: 43px
         bottom: 53px
     margin-top: 0
+    transition: all ease 0.3s
     // animation: down 1s forwards
     .branding
         position: relative
@@ -89,7 +90,7 @@ header
         ul
             a
                 font-weight: 500
-                color: $black
+                color: rgba($black, 0.8)
                 display: block
                 font-size: 38px
                 letter-spacing: -0.02em
@@ -122,7 +123,14 @@ header
             ul
                 a
                         color: $white
-        
+    &.fixed
+        position: fixed
+        z-index: 999
+        // background-color: rgba($lightGray, 1)
+        // padding:
+        //     top: 38px
+        //     bottom: 38px
+
 @media (min-width: 660px)
     header
         padding:
@@ -220,6 +228,10 @@ header
             .navigation
                 ul
                     a
+        &.fixed
+            // padding: 
+            //     top: 28px
+            //     bottom: 28px
         
 @media (min-width: 1100px)
     header

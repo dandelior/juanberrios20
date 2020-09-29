@@ -26,7 +26,7 @@ export class PresentationIndex extends React.Component {
                 <figure className="imagePresentation">
                     {/* <img src={} /> */}
                     <div className="img" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}}></div>
-                    <figcaption>Foto Pre-pandemia por <a href="https://jeangutierrez.com" target="_blank">Jean Gutierrez</a></figcaption>
+                    <figcaption>Foto Pre-pandemia por <a href="https://jeangutierrez.com" target="_blank" rel="noopener noreferrer">Jean Gutierrez</a></figcaption>
                 </figure>
             </div>
         )

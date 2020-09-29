@@ -1,31 +1,31 @@
 export const worksProvider = [
     {
         title: 'SAGA Service',
-        imgLink: '#',
+        imgLink: 'saga-cover',
         categories: 'Branding / Web',
         link: '/work'
     },
     {
         title: 'NFIT',
-        imgLink: '#',
+        imgLink: 'nfit-cover',
         categories: 'App / WebApp',
         link: '/work'
     },
     {
         title: 'Kilómetro Cero App',
-        imgLink: '#',
+        imgLink: 'km0-cover',
         categories: 'App / WebApp',
         link: '/work'
     },
     {
         title: 'Viveros El Maitén',
-        imgLink: '#',
+        imgLink: 'maiten-cover',
         categories: 'Branding / Web',
         link: '/work'
     },
     {
         title: 'Iglesia Presbiteriana San Pablo',
-        imgLink: '#',
+        imgLink: 'ipch-cover',
         categories: 'Branding / Web',
         link: '/work'
     }

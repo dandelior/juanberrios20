@@ -6,9 +6,10 @@ export class Header extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            active: false
+            active: false,
+            // fixed: false
+            isTop: true
         }
-
         this.toggleMenu = this.toggleMenu.bind(this);
     }
  
@@ -19,10 +20,19 @@ export class Header extends React.Component {
         document.body.classList.toggle('fixed');
     }
 
-    
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+          const isTop = window.scrollY < 400;
+          if (isTop !== this.state.isTop) {
+              this.setState({ isTop })
+          }
+        });
+      }
+
     render() {
 
         let actualState = this.state.active;
+        let fixedState = this.state.isTop
 
         const menus = [
             {
@@ -50,7 +60,8 @@ export class Header extends React.Component {
         return (
             <>
             {/* <Router> */}
-                <header className={`pd-lr ${actualState ? "active" : ""}`}>
+                {/* <header className={`pd-lr ${actualState ? "active" : ""} ${fixedState ? "fixed" : "fixed"}`}> */}
+                <header className={`pd-lr ${actualState ? "active" : ""} fixed`}>
                     {/* Branding */}
                     <div className="branding">
                         <a href={menus[0].link}>Juan Berrios</a>
@@ -65,7 +76,7 @@ export class Header extends React.Component {
                         <ul>
                             {menus.map((menu) => (                                
                                 menu.isExternal 
-                                ? <a href={menu.link} target="_blank">{menu.title}</a>
+                                ? <a href={menu.link} target="_blank" rel="noopener noreferrer">{menu.title}</a>
                                 : <Link to={menu.link}>{menu.title}</Link>
                             ))}
                         </ul>

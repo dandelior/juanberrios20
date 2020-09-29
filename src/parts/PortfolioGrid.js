@@ -13,7 +13,7 @@ export class PortfolioGrid extends React.Component {
                 <div className="portfolioGrid pd-lr">
                     {works.map((work) => (
                         <div className="item">
-                            <Link to={work.link} className="img" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/saga-cover.png'}')` }}></Link>
+                            <Link to={work.link} className="img" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/' + work.imgLink + '.png'}')` }}></Link>
                             {/* <a href={work.link} className="img" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/saga-cover.png'}')` }}>
                             </a> */}
                             <div className="data">
