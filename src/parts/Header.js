@@ -27,17 +27,22 @@ export class Header extends React.Component {
               this.setState({ isTop })
           }
         });
-      }
+    }
 
     render() {
 
         let actualState = this.state.active;
-        let fixedState = this.state.isTop
+        // let fixedState = this.state.isTop;
 
         const menus = [
             {
                 title: 'Trabajos',
                 link: '/',
+                isExternal: false
+            },
+            {
+                title: 'Info',
+                link: '/profile',
                 isExternal: false
             },
             {
@@ -49,11 +54,6 @@ export class Header extends React.Component {
                 title: 'GitHub',
                 link: 'https://github.com/dandelior',
                 isExternal: true
-            },
-            {
-                title: 'Perfil',
-                link: '/profile',
-                isExternal: false
             }
         ]
 
@@ -76,8 +76,8 @@ export class Header extends React.Component {
                         <ul>
                             {menus.map((menu) => (                                
                                 menu.isExternal 
-                                ? <a href={menu.link} target="_blank" rel="noopener noreferrer">{menu.title}</a>
-                                : <Link to={menu.link}>{menu.title}</Link>
+                                ? <a href={menu.link} target="_blank" rel="noopener noreferrer" onClick={this.toggleMenu}>{menu.title}</a>
+                                : <Link to={menu.link} onClick={this.toggleMenu}>{menu.title}</Link>
                             ))}
                         </ul>
                     </nav>

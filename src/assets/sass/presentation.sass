@@ -21,7 +21,7 @@
     .presentationTitle
         order: 1
         h5
-            font-weight: 300
+            @include font-light
             font-size: 15px
             letter-spacing: -0.01em
             color: rgba($black, 0.8)
@@ -31,7 +31,7 @@
             font-size: 36px
             letter-spacing: -0.02em
             line-height: 130%
-            font-weight: 400
+            @include font-regular
             margin-bottom: 60px
             max-width: 390px
     .indexDescription
@@ -74,13 +74,14 @@
 
 @media (min-width: 660px)
     .hero
-        padding-top: 216px
+        padding-top: 226px
         .presentationTitle
             h5
-                margin-bottom: 28px
+                margin:
+                    bottom: 32px
             h1
-                font-size: 44px
-                max-width: 480px
+                font-size: 46px
+                max-width: 520px
         .indexDescription
             p
             a
@@ -108,10 +109,11 @@
             margin:
                 bottom: 0
             h5
-                // margin:
-                    // bottom: 28px
+                margin:
+                    bottom: 28px
             h1
-                // font-size: 44px
+                font-size: 44px
+                max-width: 480px
                 margin-bottom: 92px
         .indexDescription
             grid-area: 2 / 1 / 3 / 4

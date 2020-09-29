@@ -1,4 +1,5 @@
 import React from 'react';
+import { worksProvider } from '../WorksProvider';
 import '../assets/sass/presentation.sass';
 
 export class PresentationIndex extends React.Component {

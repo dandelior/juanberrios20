@@ -2,7 +2,12 @@ html, body
     font-family: 'Inter', sans-serif;
     &.fixed
         overflow: hidden
-    
+
+@media (min-width: 900px)
+    html, body
+        &.fixed
+            overflow: auto
+
 // Colores: variables
 @import 'variables'
 
@@ -30,19 +35,19 @@ html, body
     font-family: 'Inter', sans-serif
 
 .font-light
-    font-weight: 300
+    @include font-light
 
 .font-regular
-    font-weight: 400
+    @include font-regular
 
 .font-medium
-    font-weight: 500
+    @include font-medium
 
 .font-bold
-    font-weight: 600
+    @include font-bold
 
 .font-black
-    font-weight: 700
+    @include font-black
 
 // Helpers
 .pd-lr

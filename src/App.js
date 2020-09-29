@@ -4,6 +4,7 @@ import { Header } from './parts/Header';
 import { Footer } from './parts/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './components/scrollToTop';
+import { worksProvider } from './WorksProvider';
 // Index
 import Main from './pages/Main';
 // Work
@@ -17,6 +18,8 @@ class App extends React.Component {
   // }
 
   render() {
+
+    let works = worksProvider;
 
     return (
         <Router>
@@ -35,10 +38,12 @@ class App extends React.Component {
                   <ProfilePage />
                 </Route>
                 {/* A Work */}
-                <Route path="/work">
-                  <ScrollToTop />
-                  <WorkPage />
-                </Route>
+                {works.map((work) => (
+                  <Route path={`/work/${work.link}`}>
+                    <ScrollToTop />
+                    <WorkPage content={work} />
+                  </Route>
+                ))}
                 {/* 404 */}
                 <Route>
                   <ScrollToTop />
