@@ -1,6 +1,6 @@
 import React from 'react';
-import { worksProvider } from '../WorksProvider';
 import '../assets/sass/presentation.sass';
+import { Link } from 'react-router-dom';
 
 export class PresentationIndex extends React.Component {
     render() {
@@ -20,7 +20,7 @@ export class PresentationIndex extends React.Component {
                         Con más de cinco años diseñando, desarrollando y llevando a la vida una gran variedad de sitios web y marcas digitales, puedo ayudarte con tu proyecto y hacer que destaque.
                     </p>
                     <p>
-                        Me considero un obsesionado con los detalles y creo que es la forma en como algo de verdad toma valor y se diferencia. Te invito a ver algunos de mis proyectos anteriores. <a href="/profile">Más Info →</a>
+                        Me considero un obsesionado con los detalles y creo que es la forma en como algo de verdad toma valor y se diferencia. Te invito a ver algunos de mis proyectos anteriores. <Link to="/profile">Más Info →</Link>
                     </p>
                 </div>
 

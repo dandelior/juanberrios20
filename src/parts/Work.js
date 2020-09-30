@@ -25,9 +25,7 @@ export class Work extends React.Component {
                             <div className="description">
                                 {work.description.description.map((desc) => {
                                     return (
-                                        <p>
-                                            {desc}
-                                        </p>
+                                        <p dangerouslySetInnerHTML={this.htmlMarkup(desc)}></p>
                                     )
                                 })}
                             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/sass/header.sass';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export class Header extends React.Component {
     constructor(props){
@@ -64,7 +64,7 @@ export class Header extends React.Component {
                 <header className={`pd-lr ${actualState ? "active" : ""} fixed`}>
                     {/* Branding */}
                     <div className="branding">
-                        <a href={menus[0].link}>Juan Berrios</a>
+                        <Link to={menus[0].link}>Juan Berrios</Link>
                     </div>
                     {/* Responsive Button */}
                     <button className={`hamburger ${actualState ? "active" : ""}`} onClick={this.toggleMenu} type="button">
