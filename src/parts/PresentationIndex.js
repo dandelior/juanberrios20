@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/sass/presentation.sass';
 import { Link } from 'react-router-dom';
-import { PiioElement } from 'piio-images-react'
+// import { PiioElement } from 'piio-images-react'
 
 export class PresentationIndex extends React.Component {
     render() {
@@ -27,8 +27,8 @@ export class PresentationIndex extends React.Component {
 
                 <figure className="imagePresentation">
                     {/* <img src={} /> */}
-                    {/* <div className="img" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}}></div> */}
-                    <PiioElement tag="div" path={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}} alt="Si, ese soy yo" className="img"></PiioElement>
+                    {/* <PiioElement tag="div" path={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}} alt="Si, ese soy yo" className="img"></PiioElement> */}
+                    <div className="img" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}}></div>
                     <figcaption>Foto Pre-pandemia por <a href="https://jeangutierrez.com" target="_blank" rel="noopener noreferrer">Jean Gutierrez</a></figcaption>
                 </figure>
             </div>

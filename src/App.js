@@ -3,7 +3,7 @@ import React from 'react';
 import { Header } from './parts/Header';
 import { Footer } from './parts/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Piio } from 'piio-images-react'
+// import { Piio } from 'piio-images-react'
 import ScrollToTop from './components/scrollToTop';
 import { worksProvider } from './WorksProvider';
 // Index
@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <Router>
           <>
-            <Piio domainKey="fgnc4m"></Piio>
+            {/* <Piio domainKey="fgnc4m"></Piio> */}
             <Header />
 
               <Switch>
