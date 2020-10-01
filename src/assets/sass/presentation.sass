@@ -76,7 +76,16 @@
 @media (min-width: 660px)
     .hero
         padding-top: 246px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(1, 1fr)
+        grid-column-gap: 48px
+        margin:
+            bottom: 34px
+        &::after
+            height: 600px
         .presentationTitle
+            grid-area: 1 / 1 / 2 / 3
             h5
                 font-size: 16px
                 margin:
@@ -87,19 +96,26 @@
                 max-width: 480px
                 margin-bottom: 62px
         .indexDescription
+            grid-area: 2 / 2 / 3 / 3
+            align-self: end
+            margin-bottom: 104px
             p
             a
         .imagePresentation
+            // grid-area: 2 / 2 / 3 / 3
+            grid-area: 2 / 1 / 3 / 2
             margin-bottom: 76px
             .img
-                margin-bottom: 17px
+                margin:
+                    bottom: 17px
+                height: 380px
             figcaption
                 a
 
 @media (min-width: 900px)
     .hero
         padding-top: 170px
-        display: grid
+        // display: grid
         grid-template-columns: repeat(5, 1fr)
         grid-template-rows: repeat(1, 1fr)
         grid-column-gap: 30px
