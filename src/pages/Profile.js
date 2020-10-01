@@ -7,7 +7,7 @@ class ProfilePage extends React.Component {
         return (
             <>
                 <Helmet>
-                    <title>Perfil/Bio — Juan Berrios</title>
+                    <title>Perfil — Juan Berrios</title>
                 </Helmet>
                 <Profile />
             </>

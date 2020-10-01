@@ -3,244 +3,217 @@
 .profile
     padding:
         top: 115px
-    .profileHeader
-        margin: 
-            bottom: 88px
-        .profileImages
-            .profileImage
-                width: 100%
-                height: 0
-                padding:
-                    top: 385 / 319 * 100%
-                background-color: $lightGray
-                background-size: cover
-                background-position: center
-                background-repeat: no-repeat
-                margin: 
-                    bottom: 22px
-        .profileDesc
-            margin-top: 74px
-            h5
-                font-size: 15px
-                line-height: 120%
-                letter-spacing: -0.01em
-                color: rgba($black, 0.7)
-                margin:
-                    bottom: 33px
-            h1
-                width: 96%
-                font-size: 38px
-                letter-spacing: -0.02em
-                line-height: 125%
-                max-width: 390px
-                margin:
-                    bottom: 33px
-            .theDesc
-                h4
-                    color: rgba($black, 0.8)
-                    font-size: 20px
-                    letter-spacing: -0.02em
-                    line-height: 150%
-                    // max-width: 96%
-                    max-width: 420px
-                    margin:
-                        bottom: 28px
-                    &:last-child
-                        margin-bottom: 0
-                    a
-                        color: $black
-                        @include font-bold
-                        opacity: 1
-                        transition: all ease 0.4s
-                        &:hover
-                            opacity: 0.7
-    .profileItems
-        margin-bottom: 48px
-        h2
-            font-size: 34px
+    .profileThumbnail
+        width: 100%
+        height: 0
+        padding-top: 1300 / 900 * 100%
+        background-color: $lightGray
+        background-position: center
+        background-size: cover
+        box-sizing: border-box
+        margin:
+            bottom: 110px
+    .bio
+        margin:
+            bottom: 115px
+        h5
+            font-size: 15px
+            @include font-light
+            color: rgba($black, 0.8)
+            margin:
+                bottom: 33px
+        h1
+            font-size: 38px
             line-height: 130%
+            line-height: 135%
             letter-spacing: -0.02em
-            @include font-bold
-            margin-bottom: 42px
-            max-width: 390px
+            margin:
+                bottom: 80px
+                bottom: 38px
+        .description
+            p
+                font-size: 20px
+                line-height: 150%
+                line-height: 155%
+                letter-spacing: -0.02em
+                margin-bottom: 28px
+                color: rgba($black, 0.8)
+    .profilePlayground
+        width: 100%
+        height: 0
+        padding: 
+            top: 1300 / 900 * 100%
+        background-color: $lightGray
+        background-position: center
+        background-size: cover
+        box-sizing: border-box
+        margin:
+            bottom: 71px
+    .services
+        margin:
+            bottom: 67px
+        h1
+            font-size: 38px
+            line-height: 130%
+            line-height: 135%
+            letter-spacing: -0.02em
+            margin:
+                bottom: 59px
         .items
             .item
-                background-color: $lightGray
-                border-radius: 2px
-                padding:
-                    top: 45px
-                    right: 34px
-                    bottom: 47px
-                    left: 29px
-                margin-bottom: 18px
-                &:last-child
-                    margin-bottom: 0
+                margin:
+                    bottom: 54px
                 h5
                     font-size: 15px
+                    @include font-light
+                    letter-spacing: -0.01em
                     line-height: 120%
                     color: rgba($black, 0.8)
-                    letter-spacing: -0.01em
-                    margin:
+                    margin: 
                         bottom: 14px
-                h4
-                    font-size: 23px
-                    letter-spacing: -0.01em
+                h3
+                    font-size: 24px
+                    max-width: 90%
                     line-height: 130%
-                    @include font-black
-                    color: rgba($black, 0.9)
-                    margin:
-                        bottom: 19px
-                p
-                    font-size: 15px
                     letter-spacing: -0.01em
+                    @include font-black
+                    margin: 
+                        bottom: 22px
+                p
+                    // max-width: 95%
+                    font-size: 16px
                     line-height: 150%
+                    letter-spacing: -0.01em
+                    color: rgba($black, 0.8)
+                &:last-child
+                    margin:
+                        bottom: 0
 
 @media (min-width: 660px)
     .profile
-        .profileHeader
-            margin: 
-                bottom: 100px
-            .profileImages
-                display: flex
-                justify-content: space-between
-                flex-wrap: wrap
-                .profileImage
-                    width: 48.5%
-                    padding:
-                        top: 185 / 319 * 100%
-            .profileDesc
-                h5
-                h1
-                    max-width: 480px
-                    font-size: 48px
-                .theDesc
-                    h4
-                        max-width: 480px
-                        &:last-child
-                        a
-        .profileItems
-            h2
-                max-width: 480px
+        .profileThumbnail
+            padding-top: 560 / 1200 * 100%
+        .bio
+            h5
+            h1
+                font-size: 46px
+                max-width: 600px
+                margin:
+                    bottom: 62px
+                    bottom: 38px
+            .description
+                max-width: 520px
+                p
+        .profilePlayground
+            padding: 
+                top: 573 / 1158 * 100%
+        .services
+            margin:
+                bottom: 78px
+            h1
+                max-width: 420px
+                font-size: 42px
+                margin:
+                    bottom: 8px
             .items
-                width: 100%
                 display: flex
-                flex-wrap: wrap
                 justify-content: space-between
+                flex-wrap: wrap
+                width: 95%
                 .item
-                    width: 48.5%
-                    display: flex
-                    flex-wrap: wrap
-                    align-items: flex-end
-                    box-sizing: border-box
-                    align-items: flex-start
-                    align-content: flex-start
-                    &:last-child
+                    width: 45.5%
+                    margin:
+                        top: 52px
+                        bottom: 0
                     h5
-                    h4
+                    h3
+                        max-width: 95%
                     p
 
 @media (min-width: 900px)
     .profile
         padding:
-            top: 128px
-        .profileHeader
-            margin: 
-                bottom: 82px
-            display: flex
-            justify-content: space-between
-            .profileImages
-                // width: 35%
-                width: 38%
-                .profileImage
-                    width: 100%
-                    padding:
-                        top: 504 / 418 * 100%
-                        top: 480 / 418 * 100%
-            .profileDesc
-                // width: 65%
-                width: 55%
-                margin-top: 82px
-                h5
-                h1
-                    // max-width: 100%
-                    max-width: 86%
-                .theDesc
-                    max-width: 86%
-                    h4
-                        max-width: 100%
-                        &:last-child
-                        a
-        .profileItems
-            h2
+            top: 126px
+        .profileThumbnail
+        .bio
+            h5
+            h1
+            .description
+                p
+        .profilePlayground
+        .services
+            h1
             .items
+                width: 100%
                 .item
-                    width: 32%
-                    margin-bottom: 20px
-                    &:last-child
+                    width: 29%
                     h5
-                    h4
+                    h3
+                        max-width: 98%
                     p
 
 @media (min-width: 1100px)
     .profile
-        padding:
+        padding: 
             top: 131px
-        .profileHeader
-            margin: 
-                bottom: 108px
-            // display: flex
-            // justify-content: space-between
-            .profileImages
-                // width: 35%
-                width: 35.5%
-                .profileImage
-                    // width: 100%
-                    // padding:
-                    //     top: 504 / 418 * 100%
-                    //     top: 480 / 418 * 100%
-            .profileDesc
-                // width: 65%
-                width: 56.8%
-                margin-top: 82px
-                margin-top: 104px
-                h5
-                    font-size: 16px
-                    margin:
-                        bottom: 33px
-                h1
-                    // max-width: 100%
-                    // max-width: 86%
-                    font-size: 54px
-                    line-height: 120%
-                    margin:
-                        bottom: 41px
-                .theDesc
-                    // max-width: 86%
-                    h4
-                        // max-width: 100%
-                        font-size: 24px
-                        line-height: 150%
-                        &:last-child
-                        a
-        .profileItems
-            h2
-                font-size: 46px
-                line-height: 120%
-                margin-bottom: 48px
+        .profileThumbnail
+            // padding-top: 520 / 1200 * 100%
+            margin:
+                bottom: 147px
+        .bio
+            margin:
+                bottom: 96px
+            h5
+                font-size: 16px
+                margin:
+                    bottom: 44px
+            h1
+                font-size: 54px
+                line-height: 125%
+                max-width: 653px
+                margin:
+                    bottom: 76px
+                    bottom: 48px
+            .description
+                max-width: 800px
+                display: flex
+                justify-content: space-between
+                p
+                    width: 370px
+                    font-size: 18px
+                    // line-height: 155%
+                    margin-bottom: 0
+        .profilePlayground
+            margin:
+                bottom: 126px
+            // padding: 
+                // top: 573 / 1158 * 100%
+        .services
+            h1
+                font-size: 54px
+                line-height: 125%
+                max-width: 612px
+                margin:
+                    bottom: 18px
             .items
-                margin-bottom: 56px
+                // display: flex
+                // justify-content: space-between
+                // flex-wrap: wrap
+                width: 95%
                 .item
-                    width: 31.7%
-                    margin-bottom: 26px
-                    padding: 
-                        top: 48px
-                        right: 42px
-                        bottom: 50px
-                        left: 38px
-                    &:last-child
+                    width: 30%
+                    width: 29%
+                    // margin:
+                    //     bottom: 56px
                     h5
-                    h4
-                        font-size: 24px
-                    p
                         font-size: 16px
-                        // line/
+                        margin: 
+                            bottom: 19px
+                    h3
+                        font-size: 25px
+                        max-width: 90%
+                        margin: 
+                            bottom: 19px
+                    p
+                        // font-size: 16px
+                        line-height: 155%
