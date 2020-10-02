@@ -3,6 +3,8 @@ import React from 'react';
 import { Header } from './parts/Header';
 import { Footer } from './parts/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
 // import { Piio } from 'piio-images-react'
 import ScrollToTop from './components/scrollToTop';
 import { worksProvider } from './WorksProvider';

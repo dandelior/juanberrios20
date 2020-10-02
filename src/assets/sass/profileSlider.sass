@@ -1,0 +1,43 @@
+.profileSlider
+    width: 100%
+    text-align: center
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 60px
+    display: flex
+    justify-content: center
+    // overflow-x: auto
+    overflow: hidden
+    height: 500px
+    box-sizing: border-box
+    .sliderWrapper
+        // text-align: center
+        overflow-x: auto
+        scroll-behavior: smooth
+        // cursor: grab
+        display: flex
+        // justify-content: center
+        // width: 100%
+        align-items: center
+        margin:
+            left: auto
+            right: auto
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
+            width: 0px
+        .slide
+            margin-left: 50px
+            margin-right: 50px
+            // width: 100%
+            // height: 100%
+            &:last-child
+                padding-right: 50px
+            // &:first-child
+            //     margin-left: 0
+            img
+                max-width: 700px
+                max-height: 500px
+                position: relative
+            

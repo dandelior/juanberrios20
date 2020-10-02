@@ -1,12 +1,15 @@
 import React from 'react';
 import '../assets/sass/profile.sass';
+import ProfileSlider from '../components/profileSlider';
 
 export class Profile extends React.Component {
     render() {
         return (
-            <div className="profile pd-lr">
-                <div className="profileThumbnail" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me.jpg'}')`}}></div>
-                <div className="bio">
+            <div className="profile">
+                <div className="pd-lr">
+                    <div className="profileThumbnail" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me.jpg'}')`}}></div>
+                </div>
+                <div className="bio pd-lr">
                     <h5>Perfil — Bio</h5>
                     <h1>
                         Hola, soy <span className="font-bold">Juan</span><br />
@@ -21,8 +24,9 @@ export class Profile extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="profilePlayground" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}}></div>
-                <div className="services">
+                {/* <div className="profilePlayground" style={{backgroundImage: `url('${process.env.PUBLIC_URL + '/img/me-1.jpg'}')`}}></div> */}
+                <ProfileSlider />
+                <div className="services pd-lr">
                     <h1>Algunas formas en que <span className="font-bold">te puedo ayudar</span></h1>
                     <div className="items">
                         <div className="item">
