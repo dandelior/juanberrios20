@@ -1,25 +1,52 @@
 import React, { Component } from "react";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import "../assets/sass/profileSlider.sass"
 
 export default class ProfileSlider extends Component {
-    render() {
+  render() {
 
-      // const IMAGE_PATH = `{${process.env.PUBLIC_URL}} + '/img'`;
-      
-      return (
-        <div className="profileSlider">
-          <div className="sliderWrapper">
-            <div className="slide">
-              <img src={process.env.PUBLIC_URL + '/img/works/km0/cover.png'} />
-            </div>
-            <div className="slide">
-              <img src={process.env.PUBLIC_URL + '/img/me-1.jpg'} />
-            </div>
-            <div className="slide">
-              <img src={process.env.PUBLIC_URL + '/img/works/km0/cover.png'} />
-            </div>
+    // const IMAGE_PATH = `{${process.env.PUBLIC_URL}} + '/img'`;
+    
+    return (
+      <Splide
+        options={
+          {
+          type: 'loop',
+          // height: '70vh',
+          autoWidth: true,
+          focus: 'center',
+          arrows: false
+          }
+        }
+        className="profileSlider"
+      >
+        <SplideSlide>
+          <div className="dia">
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Image 1"/>
           </div>
-        </div>
-      );
-    }
+        </SplideSlide>
+        <SplideSlide>
+          <div className="dia">
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_2.jpg'} alt="Image 1"/>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="dia">
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Image 1"/>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="dia">
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Image 1"/>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="dia">
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_2.jpg'} alt="Image 1"/>
+          </div>
+        </SplideSlide>
+      </Splide>
+    );
   }
+}

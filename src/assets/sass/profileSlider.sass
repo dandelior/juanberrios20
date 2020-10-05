@@ -1,43 +1,84 @@
 .profileSlider
-    width: 100%
-    text-align: center
-    position: relative
-    margin-left: auto
-    margin-right: auto
-    margin-bottom: 60px
-    display: flex
-    justify-content: center
-    // overflow-x: auto
-    overflow: hidden
-    height: 500px
-    box-sizing: border-box
-    .sliderWrapper
-        // text-align: center
-        overflow-x: auto
-        scroll-behavior: smooth
-        // cursor: grab
+    margin-bottom: 86px
+
+@media (min-width: 900px)
+    .profileSlider
+        margin-bottom: 102px
+
+@media (min-width: 1100px)
+    .profileSlider
+        margin-bottom: 140px
+
+.splide__slide
+    vertical-align: middle
+    height: 200px
+    .dia
+        margin: 0 20px
+        height: 100%
         display: flex
-        // justify-content: center
-        // width: 100%
+        justify-content: center
         align-items: center
-        margin:
-            left: auto
-            right: auto
-        scrollbar-width: none
-        &::-webkit-scrollbar
-            display: none
-            width: 0px
-        .slide
-            margin-left: 50px
-            margin-right: 50px
-            // width: 100%
+        img
+            height: 100%
+            vertical-align: middle
+            // margin: 
+            //     left: 20px
+            //     right: 20px
+            // max-width: 80vw
             // height: 100%
-            &:last-child
-                padding-right: 50px
-            // &:first-child
-            //     margin-left: 0
+            // height: 100%
+
+            // width: 100% 
+            // max-height: 80vh 
+
+@media (min-width: 600px)
+    .splide__slide
+        height: 400px
+        .dia
+            // margin: 0 20px
+            // height: 100%
+            // display: flex
+            // justify-content: center
+            // align-items: center
             img
-                max-width: 700px
-                max-height: 500px
-                position: relative
-            
+                max-width: 500px
+                max-height: 100%
+                height: auto
+                // margin: 
+                //     left: 20px
+                //     right: 20px
+                // vertical-align: middle
+
+@media (min-width: 900px)
+    .splide__slide
+        height: 400px
+        .dia
+            // margin: 0 20px
+            // height: 100%
+            // display: flex
+            // justify-content: center
+            // align-items: center
+            img
+                max-width: 660px
+                // max-height: 100%
+                // height: auto
+                margin: 
+                    left: 38px
+                    right: 38px
+
+@media (min-width: 1200px)
+    .splide__slide
+        height: 500px
+        .dia
+            // margin: 0 20px
+            // height: 100%
+            // display: flex
+            // justify-content: center
+            // align-items: center
+            img
+                max-width: 740px
+                // max-height: 100%
+                // height: auto
+                margin: 
+                    left: 42px
+                    right: 42px
