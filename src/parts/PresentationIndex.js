@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/sass/presentation.sass';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import { PiioElement } from 'piio-images-react'
 
 export class PresentationIndex extends React.Component {
