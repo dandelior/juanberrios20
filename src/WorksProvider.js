@@ -1,44 +1,5 @@
 export const worksProvider = [
     {
-        title: 'SAGA Service',
-        imgLink: 'saga-cover',
-        categories: 'Branding / Web',
-        link: 'saga',
-        cover: 'saga/cover.png',
-        description: {
-            title: '<span class="font-bold">SAGA Service</span> — Actualización de una marca de Control de plagas',
-            description: [
-                'SAGA requería una actualización de su sitio web y marca para acercar a nuevos públicos, competir en un entorno digital más exigente y por sobre todo diferenciarse.',
-                'Tuve la oportunidad de rediseñar el aspecto visual de la marca y diseñar su sitio web y luego desarrollarlo desde cero.',
-            ],
-            agency: [
-                'asomic'
-            ],
-            commission: [
-                'Branding',
-                'Sitio Web'
-            ],
-            myRole: [
-                'Identidad Gráfica',
-                'Diseño Web',
-                'Desarrollo Web',
-            ],
-            frameworks: [
-                'Laravel'
-            ]
-        },
-        content: {
-            images: [
-                'saga/1.png',
-                'saga/2.png',
-                'saga/3.png',
-                'saga/4.png',
-                'saga/5.png',
-                'saga/6.png',
-            ]
-        }
-    },
-    {
         title: 'NFIT',
         imgLink: 'nfit-cover',
         categories: 'App / WebApp',
@@ -188,5 +149,44 @@ export const worksProvider = [
                 'san-pablo/7.png'
             ]
         }
-    }
+    },
+    {
+        title: 'SAGA Service',
+        imgLink: 'saga-cover',
+        categories: 'Branding / Web',
+        link: 'saga',
+        cover: 'saga/cover.png',
+        description: {
+            title: '<span class="font-bold">SAGA Service</span> — Actualización de una marca de Control de plagas',
+            description: [
+                'SAGA requería una actualización de su sitio web y marca para acercar a nuevos públicos, competir en un entorno digital más exigente y por sobre todo diferenciarse.',
+                'Tuve la oportunidad de rediseñar el aspecto visual de la marca y diseñar su sitio web y luego desarrollarlo desde cero.',
+            ],
+            agency: [
+                'asomic'
+            ],
+            commission: [
+                'Branding',
+                'Sitio Web'
+            ],
+            myRole: [
+                'Identidad Gráfica',
+                'Diseño Web',
+                'Desarrollo Web',
+            ],
+            frameworks: [
+                'Laravel'
+            ]
+        },
+        content: {
+            images: [
+                'saga/1.png',
+                'saga/2.png',
+                'saga/3.png',
+                'saga/4.png',
+                'saga/5.png',
+                'saga/6.png',
+            ]
+        }
+    },
 ];
