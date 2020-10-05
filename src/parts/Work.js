@@ -2,9 +2,9 @@ import React from 'react';
 import '../assets/sass/work.sass';
 
 export class Work extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     htmlMarkup(e){
         return {__html: e};
@@ -57,7 +57,7 @@ export class Work extends React.Component {
                         </div>
                     </div>
                     <div className="content">
-                        {work.content.images.map((img) => (<img src={process.env.PUBLIC_URL + `/img/works/${img}`} />))}
+                        {work.content.images.map((img) => (<img src={process.env.PUBLIC_URL + `/img/works/${img}`} alt={work.title} />))}
                         {/* <img src={process.env.PUBLIC_URL + '/img/work-1.jpg'} /> */}
                     </div>
                 </div>

@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet";
 import { Work } from './../parts/Work';
 
 class WorkPage extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         let work = this.props.content;

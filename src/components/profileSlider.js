@@ -23,27 +23,27 @@ export default class ProfileSlider extends Component {
       >
         <SplideSlide>
           <div className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Image 1"/>
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Imagen de Perfil"/>
           </div>
         </SplideSlide>
         <SplideSlide>
           <div className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_2.jpg'} alt="Image 1"/>
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_2.jpg'} alt="Imagen de Perfil 2"/>
           </div>
         </SplideSlide>
         <SplideSlide>
           <div className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Image 1"/>
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Imagen de Perfil 3"/>
           </div>
         </SplideSlide>
         <SplideSlide>
           <div className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Image 1"/>
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_1.jpg'} alt="Imagen de Perfil 4"/>
           </div>
         </SplideSlide>
         <SplideSlide>
           <div className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_2.jpg'} alt="Image 1"/>
+            <img src={process.env.PUBLIC_URL + '/img/fake_profile_slider_2.jpg'} alt="Imagen de Perfil 5"/>
           </div>
         </SplideSlide>
       </Splide>

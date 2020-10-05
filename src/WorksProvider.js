@@ -8,7 +8,7 @@ export const worksProvider = [
         description: {
             title: '<span class="font-bold">NFIT</span> — Ecosistema digital para centros deportivos',
             description: [
-                'Dos productos digitales: La <span class="font-bold">webApp</span> permite que el centro deportivo pueda crear clases, asignar planes, agregar alumnos y gestionar pagos. La app permite a sus alumnos comprar o renovar membresías, reservar su cupo en una clase...'
+                'Dos productos digitales: Una <span class="font-bold">WebApp</span> que permite que el centro deportivo pueda crear clases, asignar planes, agregar alumnos y gestionar pagos. Y una <span class="font-bold">app</span> que permite a sus alumnos comprar o renovar membresías, ver el entrenamiento del día, reservar cupos para las clases, ver los videos de las clases, entre otras cosas.'
             ],
             agency: [
                 'asomic'
@@ -47,7 +47,8 @@ export const worksProvider = [
         description: {
             title: '<span class="font-bold">Kilómetro Cero App</span> — Una app para tienda y taller de bicicletas',
             description: [
-                'La app permite gestionar las horas en el taller discriminando por tipo de servicio y permite a los clientes conocer y asistir a eventos exclusivos.'
+                'Creamos una app para que los clientes de la bicicletería Kilometro Cero puedan reservar horas en el taller y asistir a eventos exclusivos.',
+                'Por otro lado, la WebApp permite gestionar las reservas desde el taller y así llevar un orden interno entre la tienda y el taller.',
             ],
             agency: [
                 'asomic'
@@ -83,7 +84,8 @@ export const worksProvider = [
         description: {
             title: '<span class="font-bold">Viveros El Maitén</span> — Web autoadministrable para vivero de cerezas',
             description: [
-                'El Maitén es un vivero especialista en plantes de cerezas que necesitaba un rebranding para todas sus aplicaciones digitales, sumado a esto, un sitio web autoadministrable. </p><p>El sitio web lo desarrollamos en Wordpress CMS a medida, donde la empresa tiene capacidades para editar prácticamente toda la información.'
+                'El Maitén es un vivero especialista en plantes de cerezas que necesitaba un rebranding para todas sus aplicaciones digitales, sumado a esto, un sitio web autoadministrable.',
+                'Desarrollamos el sitio web en Wordpress CMS a medida, donde la empresa tiene capacidades para editar prácticamente toda la información sin comprometer la estructura.'
             ],
             agency: [
                 'asomic'
