@@ -5,122 +5,122 @@
         margin-top: -100px
     100%
         margin-top: 0
-
 header
-    display: flex
-    justify-content: space-between
-    width: 100%
-    box-sizing: border-box
-    position: absolute
-    padding:
-        // top: 53px
-        top: 43px
-        bottom: 53px
-    margin-top: 0
-    transition: all ease 0.3s
-    // animation: down 1s forwards
-    .branding
-        position: relative
-        z-index: 14
-        a
-            @include font-bold
-            font-size: 15px
-            letter-spacing: -0.01em
-            color: $black
-            transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1)
-    .hamburger
-        appearance: none
-        cursor: pointer
-        border: none
-        background: transparent
-        border-radius: 0
-        color: transparent
-        outline: none
-        width: 36px
+    .header-inner
         display: flex
-        flex-wrap: wrap
-        align-items: center
-        align-content: center
-        position: relative
-        z-index: 12
-        opacity: 1
-        padding: 
-            left: 0
-            right: 0
-        transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1)
-        .hamburger-box-a,
-        .hamburger-box-b
-            width: 36px
-            height: 3px
-            background-color: $black
-            margin: 0
-            transition: all ease 0.3s
-        .hamburger-box-a
-            margin-bottom: 5px
-        .hamburger-box-b
-        &:hover
-            opacity: 0.7
-        &.active
-            .hamburger-box-a
-                transform: rotate(-43deg) translateY(5px)
-            .hamburger-box-b
-                transform: rotate(43deg) translateY(-5px)
-    .navigation
-        position: fixed
-        background-color: $black
-        top: 0
-        left: 0
-        right: -200vw
-        bottom: 0
-        margin: auto
-        z-index: 10
+        justify-content: space-between
         width: 100%
-        height: 100%
         box-sizing: border-box
-        display: flex
-        align-items: center
-        transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1)
+        position: absolute
         padding:
-            top: 100px
-            left: 24px
-            right: 24px
-        ul
-            a
-                @include font-medium
-                color: rgba($black, 0.8)
-                display: block
-                font-size: 38px
-                letter-spacing: -0.02em
-                opacity: 1
-                transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1)
-                // margin-bottom: 22px
-                margin-bottom: 28px
-                &:hover
-                    opacity: 0.7
-                &:nth-child(1)
-                    transition-delay: 0.2s
-                &:nth-child(2)
-                    transition-delay: 0.4s
-                &:nth-child(3)
-                    transition-delay: 0.6s
-                &:nth-child(4)
-                    transition-delay: 0.8s
-                &:last-child
-                    margin-bottom: 0
-    &.active
+            // top: 53px
+            top: 43px
+            bottom: 53px
+        margin-top: 0
+        transition: all ease 0.3s
+        // animation: down 1s forwards
         .branding
+            position: relative
+            z-index: 14
             a
-                color: $white
+                @include font-bold
+                font-size: 15px
+                letter-spacing: -0.01em
+                color: $black
+                transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1)
         .hamburger
+            appearance: none
+            cursor: pointer
+            border: none
+            background: transparent
+            border-radius: 0
+            color: transparent
+            outline: none
+            width: 36px
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            align-content: center
+            position: relative
+            z-index: 12
+            opacity: 1
+            padding: 
+                left: 0
+                right: 0
+            transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1)
             .hamburger-box-a,
             .hamburger-box-b
-                background-color: $white
+                width: 36px
+                height: 3px
+                background-color: $black
+                margin: 0
+                transition: all ease 0.3s
+            .hamburger-box-a
+                margin-bottom: 5px
+            .hamburger-box-b
+            &:hover
+                opacity: 0.7
+            &.active
+                .hamburger-box-a
+                    transform: rotate(-43deg) translateY(5px)
+                .hamburger-box-b
+                    transform: rotate(43deg) translateY(-5px)
         .navigation
-            right: 0
+            position: fixed
+            background-color: $black
+            top: 0
+            left: 0
+            right: -200vw
+            bottom: 0
+            margin: auto
+            z-index: 10
+            width: 100%
+            height: 100%
+            box-sizing: border-box
+            display: flex
+            align-items: center
+            transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1)
+            padding:
+                top: 100px
+                left: 24px
+                right: 24px
             ul
                 a
+                    @include font-medium
+                    color: rgba($black, 0.8)
+                    display: block
+                    font-size: 38px
+                    letter-spacing: -0.02em
+                    opacity: 1
+                    transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1)
+                    // margin-bottom: 22px
+                    margin-bottom: 28px
+                    &:hover
+                        opacity: 0.7
+                    &:nth-child(1)
+                        transition-delay: 0.2s
+                    &:nth-child(2)
+                        transition-delay: 0.4s
+                    &:nth-child(3)
+                        transition-delay: 0.6s
+                    &:nth-child(4)
+                        transition-delay: 0.8s
+                    &:last-child
+                        margin-bottom: 0
+        &.active
+            .branding
+                a
                     color: $white
-    &.fixed
+            .hamburger
+                .hamburger-box-a,
+                .hamburger-box-b
+                    background-color: $white
+            .navigation
+                right: 0
+                ul
+                    a
+                        color: $white
+        &.fixed
         position: fixed
         z-index: 999
         // background-color: rgba($lightGray, 1)
@@ -130,33 +130,34 @@ header
 
 @media (min-width: 660px)
     header
-        padding:
-            top: 53px
-            // bottom: 53px
-        .branding
-            a
-        .hamburger
-            .hamburger-box-a,
-            .hamburger-box-b
-            .hamburger-box-a
-            .hamburger-box-b
-            &:hover
-            &.active
+        .header-inner
+            padding:
+                top: 53px
+                // bottom: 53px
+            .branding
+                a
+            .hamburger
+                .hamburger-box-a,
+                .hamburger-box-b
                 .hamburger-box-a
                 .hamburger-box-b
-        .navigation
-            padding:
-                left: 32px
-                right: 32px
-            ul
-                a
-                    &:hover
-                    &:nth-child(1)
-                    &:nth-child(2)
-                    &:nth-child(3)
-                    &:nth-child(4)
-                    &:last-child
-        &.active
+                &:hover
+                &.active
+                    .hamburger-box-a
+                    .hamburger-box-b
+            .navigation
+                padding:
+                    left: 32px
+                    right: 32px
+                ul
+                    a
+                        &:hover
+                        &:nth-child(1)
+                        &:nth-child(2)
+                        &:nth-child(3)
+                        &:nth-child(4)
+                        &:last-child
+            &.active
             .branding
                 a
             .hamburger
@@ -168,97 +169,99 @@ header
         
 @media (min-width: 900px)
     header
-        padding: 
-            top: 58px
-            // bottom: 53px
-        .branding
-            width: 100%
-            a
-        .hamburger
-            display: none
-            .hamburger-box-a,
-            .hamburger-box-b
-            .hamburger-box-a
-            .hamburger-box-b
-            &:hover
-            &.active
-                .hamburger-box-a
-                .hamburger-box-b
-        .navigation
-            position: relative
-            background-color: transparent
-            right: auto
-            width: auto
-            height: auto
-            padding:
-                left: 0
-                right: 0
-                top: 0
-            width: 100%
-            ul
-                display: flex
-                justify-content: flex-end
+        .header-inner
+            padding: 
+                top: 58px
+                // bottom: 53px
+            .branding
                 width: 100%
                 a
-                    display: inherit
-                    font-size: 15px
-                    margin-left: 66px
-                    margin-bottom: 0
-                    transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1)
-                    &:hover
-                        opacity: 0.6
-                    &:nth-child(1)
-                        transition-delay: 0s
-                    &:nth-child(2)
-                        transition-delay: 0s
-                    &:nth-child(3)
-                        transition-delay: 0s
-                    &:nth-child(4)
-                        transition-delay: 0s
-                    &:last-child
-        &.active
+            .hamburger
+                display: none
+                .hamburger-box-a,
+                .hamburger-box-b
+                .hamburger-box-a
+                .hamburger-box-b
+                &:hover
+                &.active
+                    .hamburger-box-a
+                    .hamburger-box-b
+            .navigation
+                position: relative
+                background-color: transparent
+                right: auto
+                width: auto
+                height: auto
+                padding:
+                    left: 0
+                    right: 0
+                    top: 0
+                width: 100%
+                ul
+                    display: flex
+                    justify-content: flex-end
+                    width: 100%
+                    a
+                        display: inherit
+                        font-size: 15px
+                        margin-left: 66px
+                        margin-bottom: 0
+                        transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1)
+                        &:hover
+                            opacity: 0.6
+                        &:nth-child(1)
+                            transition-delay: 0s
+                        &:nth-child(2)
+                            transition-delay: 0s
+                        &:nth-child(3)
+                            transition-delay: 0s
+                        &:nth-child(4)
+                            transition-delay: 0s
+                        &:last-child
+            &.active
+                .branding
+                    a
+                        color: $black
+                .hamburger
+                    .hamburger-box-a,
+                    .hamburger-box-b
+                        background-color: transparent
+                .navigation
+                    right: auto
+                    ul
+                        a
+                            color: rgba($black, 0.8)
+            &.fixed
+                // padding: 
+                //     top: 28px
+                //     bottom: 28px
+            
+@media (min-width: 1100px)
+    header
+        .header-inner
             .branding
                 a
-                    color: $black
+                    font-size: 16px
             .hamburger
                 .hamburger-box-a,
                 .hamburger-box-b
-                    background-color: transparent
-            .navigation
-                right: auto
-                ul
-                    a
-                        color: rgba($black, 0.8)
-        &.fixed
-            // padding: 
-            //     top: 28px
-            //     bottom: 28px
-        
-@media (min-width: 1100px)
-    header
-        .branding
-            a
-                font-size: 16px
-        .hamburger
-            .hamburger-box-a,
-            .hamburger-box-b
-            .hamburger-box-a
-            .hamburger-box-b
-            &:hover
-            &.active
                 .hamburger-box-a
                 .hamburger-box-b
-        .navigation
-            ul
-                a
-                    margin-left: 82px
-                    &:hover
-                    &:nth-child(1)
-                    &:nth-child(2)
-                    &:nth-child(3)
-                    &:nth-child(4)
-                    &:last-child
-        &.active
+                &:hover
+                &.active
+                    .hamburger-box-a
+                    .hamburger-box-b
+            .navigation
+                ul
+                    a
+                        margin-left: 82px
+                        &:hover
+                        &:nth-child(1)
+                        &:nth-child(2)
+                        &:nth-child(3)
+                        &:nth-child(4)
+                        &:last-child
+            &.active
             .branding
                 a
             .hamburger

@@ -59,30 +59,29 @@ export class Header extends React.Component {
 
         return (
             <>
-            {/* <Router> */}
-                {/* <header className={`pd-lr ${actualState ? "active" : ""} ${fixedState ? "fixed" : "fixed"}`}> */}
-                <header className={`pd-lr ${actualState ? "active" : ""} fixed`}>
-                    {/* Branding */}
-                    <div className="branding">
-                        <Link to={menus[0].link}>Juan Berrios</Link>
+                <header>
+                    <div className={`header-inner pd-lr ${actualState ? "active" : ""} fixed`}>
+                        {/* Branding */}
+                        <div className="branding">
+                            <Link to={menus[0].link}>Juan Berrios</Link>
+                        </div>
+                        {/* Responsive Button */}
+                        <button className={`hamburger ${actualState ? "active" : ""}`} onClick={this.toggleMenu} type="button">
+                            <span className="hamburger-box-a"></span>
+                            <span className="hamburger-box-b"></span>
+                        </button>
+                        {/* Navigation Menu */}
+                        <nav className={`navigation ${actualState ? "active" : ""}`}>
+                            <ul>
+                                {menus.map((menu) => (                                
+                                    menu.isExternal 
+                                    ? <a href={menu.link} target="_blank" rel="noopener noreferrer" onClick={this.toggleMenu}>{menu.title}</a>
+                                    : <Link to={menu.link} onClick={this.toggleMenu}>{menu.title}</Link>
+                                ))}
+                            </ul>
+                        </nav>
                     </div>
-                    {/* Responsive Button */}
-                    <button className={`hamburger ${actualState ? "active" : ""}`} onClick={this.toggleMenu} type="button">
-                        <span className="hamburger-box-a"></span>
-                        <span className="hamburger-box-b"></span>
-                    </button>
-                    {/* Navigation Menu */}
-                    <nav className={`navigation ${actualState ? "active" : ""}`}>
-                        <ul>
-                            {menus.map((menu) => (                                
-                                menu.isExternal 
-                                ? <a href={menu.link} target="_blank" rel="noopener noreferrer" onClick={this.toggleMenu}>{menu.title}</a>
-                                : <Link to={menu.link} onClick={this.toggleMenu}>{menu.title}</Link>
-                            ))}
-                        </ul>
-                    </nav>
                 </header>
-            {/* </Router> */}
             </>
         )
     }

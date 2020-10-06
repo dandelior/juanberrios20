@@ -2,9 +2,6 @@ import React from 'react';
 import '../assets/sass/work.sass';
 
 export class Work extends React.Component {
-    // constructor(props) {
-    //     super(props)
-    // }
 
     htmlMarkup(e){
         return {__html: e};

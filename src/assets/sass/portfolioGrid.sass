@@ -93,6 +93,7 @@
         margin:
             bottom: 28px
         grid-column-gap: 50px
+        grid-column-gap: 60px
         .item
             // width: 48.5%
             // margin-top: 0
@@ -106,4 +107,49 @@
                         margin-bottom: 12px
                 p
                     font-size: 16px
+            &:first-child
+
+@media (min-width: 1400px)
+    .portfolioGrid
+        // justify-content: space-between
+        // margin:
+            // bottom: 28px
+        grid-column-gap: 70px
+        grid-column-gap: 5vw
+        .item
+            // width: 48.5%
+            // margin-top: 0
+            // margin-bottom: 62px
+            a.img
+                // width: 32%
+            .data
+                a
+                    h4
+                        // font-size: 16px
+                        // margin-bottom: 12px
+                p
+                    // font-size: 16px
+            &:first-child
+
+@media (min-width: 1800px)
+    .portfolioGrid
+        // justify-content: space-between
+        // margin:
+            // bottom: 28px
+        grid-template-columns: repeat(4, 1fr)
+        // grid-column-gap: 70px
+        // grid-column-gap: 5vw
+        .item
+            // width: 25%
+            // margin-top: 0
+            // margin-bottom: 62px
+            a.img
+                // width: 32%
+            .data
+                a
+                    h4
+                        // font-size: 16px
+                        // margin-bottom: 12px
+                p
+                    // font-size: 16px
             &:first-child
