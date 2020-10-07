@@ -3,11 +3,13 @@ import React from 'react';
 import { Header } from './parts/Header';
 import { Footer } from './parts/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
-// import { Piio } from 'piio-images-react'
+// import { CSSTransition, TransitionGroup } from "react-transition-group";
+
+// Components
 import ScrollToTop from './components/scrollToTop';
+
 import { worksProvider } from './WorksProvider';
+
 // Index
 import Main from './pages/Main';
 // Work
@@ -16,9 +18,6 @@ import WorkPage from './pages/Work';
 import ProfilePage from './pages/Profile';
 
 class App extends React.Component {
-  // constructor() {
-  //   super()
-  // }
 
   render() {
 
@@ -27,7 +26,6 @@ class App extends React.Component {
     return (
       <Router>
           <>
-            {/* <Piio domainKey="fgnc4m"></Piio> */}
             <Header />
 
               <Switch>
