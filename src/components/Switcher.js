@@ -10,6 +10,7 @@ import Main from '../pages/Main';
 import WorkPage from '../pages/Work';
 import ProfilePage from '../pages/Profile';
 
+// Components
 import ScrollToTop from './scrollToTop';
 
 function Switcher() {
@@ -19,30 +20,31 @@ function Switcher() {
 
     return (
         <>
-            {/* <ScrollToTop /> */}
+            <ScrollToTop />
             <AnimatedSwitch
-                atEnter={{ opacity: 0 }}
-                atLeave={{ opacity: 0 }}
-                atActive={{ opacity: 1 }}
-                className="switch-wrapper"
+                atEnter={{ 
+                    opacity: 0
+                 }}
+                atLeave={{ 
+                    opacity: 0
+                 }}
+                atActive={{ 
+                    opacity: 1
+                 }}
             >
 
                 <Route exact path="/">
-                    {/* <ScrollToTop /> */}
                     <Main />
                 </Route>
                 <Route path="/profile">
-                    {/* <ScrollToTop /> */}
                     <ProfilePage />
                 </Route>
                 {works.map((work) => (
                     <Route path={`/work/${work.link}`}>
-                        {/* <ScrollToTop /> */}
                         <WorkPage content={work} />
                     </Route>
                 ))}
                 <Route>
-                    {/* <ScrollToTop /> */}
                     <Main />
                 </Route>
 

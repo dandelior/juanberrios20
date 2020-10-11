@@ -5,7 +5,7 @@ import { Footer } from './parts/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // Components
-import ScrollToTop from './components/scrollToTop';
+// import ScrollToTop from './components/scrollToTop';
 import Switcher from './components/Switcher';
 
 class App extends React.Component {
@@ -15,7 +15,6 @@ class App extends React.Component {
     return (
       <Router>
           <>
-            {/* <ScrollToTop /> */}
             <Header />
             <Switcher />
             <Footer />
