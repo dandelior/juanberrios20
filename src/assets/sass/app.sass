@@ -1,3 +1,11 @@
+@import 'variables'
+
+html
+    background-color: $lightGray
+
+body
+    background-color: white
+    
 html, body
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeLegibility
@@ -11,8 +19,13 @@ html, body
         &.fixed
             overflow: auto
 
-// Colores: variables
-@import 'variables'
+::selection
+    background: rgba($black, 0.1)
+    // color: $lightGray
+
+::-moz-selection
+    background: rgba($black, 0.1)
+    // color: $lightGray
 
 // Colores: clases
 .color-black

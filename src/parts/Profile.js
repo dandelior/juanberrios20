@@ -26,7 +26,7 @@ export class Profile extends React.Component {
                         <p>
                             {/* Vivo y trabajo en Curicó, en una pequeña agencia llamada asomic, en donde creamos y llevamos 
                             a la vida diversos productos digitales. Muchos de ellos forman parte de mi portafolio. */}
-                            Desde 2018 comencé a trabajar en <a href="https://asomic.com">asomic</a> una pequeña agencia digital. Allí me encargo del diseño/desarrollo 
+                            Desde 2018 comencé a trabajar en <a href="https://asomic.com" target="_blank" rel="noopener noreferrer">asomic</a> una pequeña agencia digital. Allí me encargo del diseño/desarrollo 
                             de aplicaciones web y móviles, como también de algunos proyectos de identidad corporativa. Hoy tengo más de cinco años de experiencia 
                             en el diseño de interfaces y desarrollo frontend.
                         </p>

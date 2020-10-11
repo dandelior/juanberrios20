@@ -18,7 +18,7 @@ export class Footer extends React.Component {
                         </div>
                         <div>
                             <p>O a mi Instagram</p>
-                            <a href="https://instagram.com/bydandelior">@bydandelior</a>
+                            <a href="https://instagram.com/bydandelior" target="_blank" rel="noopener noreferrer">@bydandelior</a>
                         </div>
                     </div>
                     <div className="credits">

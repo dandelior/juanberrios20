@@ -3,11 +3,10 @@
 .hero
     display: flex
     flex-wrap: wrap
-    // width: 100%
     box-sizing: border-box
     padding-top: 196px
     position: relative
-    // padding-top: 112px
+    z-index: 2
     &::after
         content: ''
         position: absolute
@@ -18,6 +17,8 @@
         height: 800px
         background-color: $lightGray
         z-index: -10
+        opacity: 1
+        transition: all ease 0.3s
     .presentationTitle
         order: 1
         h5
