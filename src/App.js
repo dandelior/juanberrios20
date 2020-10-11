@@ -2,57 +2,22 @@ import React from 'react';
 // import logo from './logo.svg';
 import { Header } from './parts/Header';
 import { Footer } from './parts/Footer';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // Components
 import ScrollToTop from './components/scrollToTop';
-
-import { worksProvider } from './WorksProvider';
-
-// Index
-import Main from './pages/Main';
-// Work
-import WorkPage from './pages/Work';
-// Profile
-import ProfilePage from './pages/Profile';
+import Switcher from './components/Switcher';
 
 class App extends React.Component {
 
   render() {
 
-    let works = worksProvider;
-
     return (
       <Router>
           <>
+            {/* <ScrollToTop /> */}
             <Header />
-
-              <Switch>
-                {/* Index */}
-                <Route exact path="/">
-                  <ScrollToTop />
-                  <Main />
-                </Route>
-                {/* Profile */}
-                <Route path="/profile">
-                  <ScrollToTop />
-                  <ProfilePage />
-                </Route>
-                {/* A Work */}
-                {works.map((work) => (
-                  <Route path={`/work/${work.link}`}>
-                    <ScrollToTop />
-                    <WorkPage content={work} />
-                  </Route>
-                ))}
-                {/* 404 */}
-                <Route>
-                  <ScrollToTop />
-                  <Main />
-                </Route>
-              </Switch>
-
+            <Switcher />
             <Footer />
           </>
         </Router>
