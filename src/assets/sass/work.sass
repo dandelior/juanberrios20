@@ -35,6 +35,8 @@
                 color: $black
                 margin-bottom: 32px
                 max-width: 420px
+                strong, b
+                    @include font-bold
             .description
                 margin:
                     // bottom: 48px
@@ -65,10 +67,11 @@
                     margin-bottom: 0
                     line-height: 150%
                     color: rgba($black, 0.7)
+                    white-space: pre-wrap
     .content
         padding:
             bottom: 45px
-        img
+        figure, img
             max-width: 100%
             margin:
                 bottom: 18px
@@ -135,6 +138,8 @@
             .headerDetails
                 width: 30%
                 align-self: start
+                padding:
+                    top: 48px
                 // max-width: 480px
                 // display: flex
                 // flex-wrap: wrap
@@ -179,6 +184,8 @@
                         max-width: 80%
             .headerDetails
                 // align-self: start
+                padding: 
+                    top: 52px
                 .item
                     margin-bottom: 38px
                     h6
@@ -186,7 +193,7 @@
         .content
             padding:
                 bottom: 52px
-            img
+            figure, img
                 margin:
                     bottom: 31px
                 &:last-child
@@ -275,3 +282,10 @@
                 // margin:
                     // bottom: 31px
                 &:last-child
+
+.loading-box
+    width: 100%
+    min-height: 120vh
+    display: flex
+    justify-content: center
+    align-items: center
