@@ -23,19 +23,26 @@ export default class ProfileSlider extends Component {
       >
         <SplideSlide>
           <figure className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/ps_2.jpg'} alt="Imagen de Perfil 3"/>
+            <img src={process.env.PUBLIC_URL + '/img/ps_2.jpg'} alt="Imagen de Perfil"/>
             {/* <caption>2018</caption> */}
           </figure>
         </SplideSlide>
+        
         <SplideSlide>
           <figure className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/ps_3.jpg'} alt="Imagen de Perfil 3"/>
-            {/* <caption>Toco en una banda en la iglesia a la que asisto regularmente</caption> */}
+            <img src={process.env.PUBLIC_URL + '/img/ps_4.jpg'} alt="Imagen de Perfil"/>
+            {/* <caption>hola</caption> */}
           </figure>
         </SplideSlide>
         <SplideSlide>
           <figure className="dia">
-            <img src={process.env.PUBLIC_URL + '/img/ps_1.jpg'} alt="Imagen de Perfil 2"/>
+            <img src={process.env.PUBLIC_URL + '/img/ps_3.jpg'} alt="Imagen de Perfil"/>
+            {/* <caption>hola</caption> */}
+          </figure>
+        </SplideSlide>
+        <SplideSlide>
+          <figure className="dia">
+            <img src={process.env.PUBLIC_URL + '/img/ps_5.jpg'} alt="Imagen de Perfil"/>
             {/* <caption>hola</caption> */}
           </figure>
         </SplideSlide>
