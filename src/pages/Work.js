@@ -75,7 +75,7 @@ function WorkPage() {
                 <meta name="copyright" content={`(c) ${year} Juan Berrios`} />
             </Helmet>
             <div className="work pd-lr">
-                <div className="workImage" style={{backgroundImage: `url('${urlFor(postData.imagen_portada).url()}')` }}></div>
+                <div className="workImage" style={{backgroundImage: `url('${urlFor(postData.imagen_portada).auto('format').width(1600).url()}')` }}></div>
                 <div className="workHeader">
                     <div className="headerDescription">
                         <h5>Proyecto Seleccionado</h5>
@@ -114,6 +114,7 @@ function WorkPage() {
                 <div className="content">
                     <BlockContent
                         blocks={postData.contenido}
+                        imageOptions={{auto: 'format'}}
                         projectId={sanityClient.clientConfig.projectId}
                         dataset={sanityClient.clientConfig.dataset}
                     />
